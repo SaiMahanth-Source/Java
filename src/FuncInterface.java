@@ -1,6 +1,6 @@
 @FunctionalInterface
 interface func{
-    void show(); // Functional interace will be having only one abstract method
+    void show(); // Functional interface will be having only one abstract method
 }
 
 public class FuncInterface {
