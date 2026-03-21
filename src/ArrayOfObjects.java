@@ -1,7 +1,7 @@
 public class ArrayOfObjects {
     public static void main(String[] args){
 
-        Employee e1 = new Employee(); // class Employye belongs to same package so need not to create another class again
+        Employee e1 = new Employee(); // class Employee belongs to same package so there's no need create another class again
         e1.employeeId = 13596924;
         e1.employeeName = "Rishi";
         e1.employSalary = "9999001";
