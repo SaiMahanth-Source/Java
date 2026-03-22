@@ -21,7 +21,6 @@ public class TryWithMultipleCatch {
         emps[1] = e2;
         emps[2] = e3;
 
-
         try {
             /*
             If any statements which are before critical statements then execution will be continued make sure to
