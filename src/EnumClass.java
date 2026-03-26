@@ -17,7 +17,16 @@ class Waiver{
     public String getName() {
         return Name;
     }
-    public void display(Waiver waiver) {
+
+    public Status getStatus() {
+        return Status;
+    }
+
+    public void setStatus(Status status) {
+        Status = status;
+    }
+
+    public static void display(Waiver waiver) {
         System.out.println("Type : " + Waiver.type);
         System.out.println("Serial Number : " + waiver.getSerialNumber());
         System.out.println("Name : " + waiver.getName());
