@@ -1,10 +1,10 @@
 class AThread extends Thread{
     public void run(){ // run method executes because of the concept of method overriding
 
-        for(int i = 0; i< 119 ; i++){
+        for(int i = 0; i< 1119 ; i++){
             System.out.println("In class ATread");
 //            try{
-//                Thread.sleep(11);
+//                Thread.sleep(11); // sleep is a static method belongs to Thread class
 //            }
 //            catch(InterruptedException e){
 //                System.out.println(e);
@@ -17,8 +17,8 @@ class AThread extends Thread{
 class BThread extends Thread{
     public void run(){ // run method executes because of the concept of method overriding
 
-        for(int i = 0; i< 119 ; i++){
-            System.out.println("In class BTread");
+        for(int i = 0; i< 1119 ; i++){
+            System.out.println("In class BThread");
 //            try{
 //                Thread.sleep(11);
 //            }
@@ -33,7 +33,7 @@ class BThread extends Thread{
 class CThread extends Thread{
     public void run(){ // run method executes because of the concept of method overriding
 
-        for(int i = 0; i< 119 ; i++){
+        for(int i = 0; i< 1119 ; i++){
             System.out.println("In class CThread");
 //            try{
 //                Thread.sleep(11);
