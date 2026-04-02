@@ -30,6 +30,22 @@ class BThread extends Thread{
     }
 }
 
+class CThread extends Thread{
+    public void run(){ // run method executes because of the concept of method overriding
+
+        for(int i = 0; i< 119 ; i++){
+            System.out.println("In class CThread");
+//            try{
+//                Thread.sleep(11);
+//            }
+//            catch(InterruptedException e){
+//                System.out.println(e);
+//            }
+//            this is to make it delay for some time so that other thread can proceed with execution
+        }
+    }
+}
+
 public class MultipleThreads {
     public static void main(String[] args){
 
