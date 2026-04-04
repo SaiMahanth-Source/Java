@@ -40,6 +40,7 @@ public class SwitchStatement {
             default -> System.out.println("8AM");
         }
         System.out.println("--------------------------------------");
+
         // Switch can also be usd as an expression
         String result = "";
         switch(day){
@@ -49,6 +50,7 @@ public class SwitchStatement {
         }
         System.out.println(result);
         System.out.println("--------------------------------------");
+
         String result2 = switch(day){
             case "Saturday", "Sunday" -> "10AM";
             case "Monday" -> "7AM";
@@ -56,6 +58,7 @@ public class SwitchStatement {
         }; // Semicolon is needed as it was the expression
         System.out.println(result2);
         System.out.println("--------------------------------------");
+
         String result3 = switch(day){
             case "Saturday", "Sunday" : yield "10AM";
             case "Monday" : yield "7AM";
