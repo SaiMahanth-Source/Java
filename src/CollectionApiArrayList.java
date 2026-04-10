@@ -16,6 +16,7 @@ public class CollectionApiArrayList {
             employees1[i].employeeName = sc.nextLine();
             employees1[i].employSalary = sc.nextLine();
         }
+        sc.close();
 
 //        Collection<Employee> employees2 = new ArrayList<>();
 //        employees2.add(employees1[0]);
@@ -33,7 +34,7 @@ public class CollectionApiArrayList {
 
         System.out.println("\n-----Using enhanced for loop-----");
         for(Employee e:employees2){
-            System.out.println(e.employeeId + " " + e.employeeName + " " + e.employSalary);
+            System.out.println("\n" + e.employeeId + " " + e.employeeName + " " + e.employSalary);
         }
 
         System.out.println("\n-----Using normal for loop-----");
