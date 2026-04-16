@@ -1,6 +1,5 @@
 import java.util.Collection;
 import java.util.HashMap;
-import java.util.Hashtable;
 import java.util.Map;
 
 public class MapInterface {
@@ -19,7 +18,7 @@ public class MapInterface {
         Collection<String> Keys = map.keySet();
 
         for(String key : Keys){
-            System.out.println(key + ": " + map.get(key));
+            System.out.println(key + " : " + map.get(key));
         }
     }
 }

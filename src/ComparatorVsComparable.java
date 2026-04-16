@@ -71,9 +71,10 @@ public class ComparatorVsComparable {
         // Below is using lambda expression as Comparator interface is functional interface
         Comparator<Integer> comparator2 = (o1, o2) -> (o1%10 >  o2%10) ? 1 : -1 ;
 
-//        Collections.sort(list,comparator);
+//        Collections.sort(list);
 
 //        System.out.println(list);
+
         List<Student> students = new ArrayList<>();
         students.add(new Student(19, "Chintu"));
         students.add(new Student(21, "Sai"));
@@ -84,21 +85,23 @@ public class ComparatorVsComparable {
 //        System.out.println("Before sorting:");
 //        System.out.println(students);
 
-//        Comparator<Student> comp1 = new  Comparator<>() {
-//            @Override
-//            public int compare(Student o1, Student o2) {
-//
-//                if(o1.age >  o2.age) {
-//                    return 1 ;
-//                }
-//                else{
-//                    return -1;
-//                }
-//            }
-//        };
+        Comparator<Student> comp1 = new  Comparator<>() {
+            @Override
+            public int compare(Student o1, Student o2) {
+
+                if(o1.age >  o2.age) {
+                    return 1 ;
+                }
+                else{
+                    return -1;
+                }
+            }
+        };
 
         // Below is using lambda expression as Comparator interface is functional interface
 //        Comparator<Student> comp2 = (o1,  o2) -> (o1.age >  o2.age) ? 1 : -1 ;
+
+        Collections.sort(students, comp1);// Sorted list using comparator
 
         Collections.sort(students);
 
