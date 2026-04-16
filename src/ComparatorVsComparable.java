@@ -18,6 +18,10 @@ class Student implements Comparable<Student> {
         this.name = name;
     }
 
+    public Student() {
+
+    }
+
     @Override
     public String toString() {
         return "Student{" +
