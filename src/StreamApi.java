@@ -32,6 +32,5 @@ public class StreamApi {
 
         System.out.println("After performing operations using stream api with no individual stream objects created is : "
                 + sum3);
-
     }
 }
